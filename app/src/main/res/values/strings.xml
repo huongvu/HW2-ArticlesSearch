@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NYT Article Search</string>
+    <string name="action_settings">Advance Search Settings</string>
+    <string name="date_picker">Begin Date</string>
+    <string name="sort_order">Sort Order</string>
+    <string name="desk_value">News Desk Values</string>
+    <string name="art">Arts</string>
+    <string name="fashion_style">Fashion And Style</string>
+    <string name="sports">Sports</string>
+    <string name="save">Save</string>
+</resources>

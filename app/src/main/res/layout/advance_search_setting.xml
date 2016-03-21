@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date_picker"
+        android:id="@+id/textView"
+        android:layout_alignBottom="@+id/etDatePicker"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etDatePicker"
+        android:layout_marginTop="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sort_order"
+        android:id="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:entries="@array/sort_array"
+        android:layout_height="wrap_content"
+        android:id="@+id/spSort"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/etDatePicker"
+        android:layout_alignStart="@+id/etDatePicker"
+        android:layout_alignRight="@+id/etDatePicker"
+        android:layout_alignEnd="@+id/etDatePicker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desk_value"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/spSort"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/art"
+        android:id="@+id/checkBox_art"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/spSort"
+        android:layout_alignStart="@+id/spSort" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fashion_style"
+        android:id="@+id/checkBox_fashion_style"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox_art"
+        android:layout_alignLeft="@+id/checkBox_art"
+        android:layout_alignStart="@+id/checkBox_art" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sports"
+        android:id="@+id/checkBox_sport"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox_fashion_style"
+        android:layout_alignLeft="@+id/checkBox_fashion_style"
+        android:layout_alignStart="@+id/checkBox_fashion_style" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/btSave"
+        android:layout_below="@+id/checkBox_sport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp" />
+</RelativeLayout>
